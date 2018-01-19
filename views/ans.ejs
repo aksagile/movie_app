@@ -1,0 +1,20 @@
+<% include partials/header %>
+<div class="container">
+  <% data["Search"].forEach(function(ans){ %>
+  <div>
+    <li>
+      <h3><strong><%=ans["Title"] %></strong>  </h3>
+      <h3>released on : <%=ans["Year"]%> </h3>
+            <img src=<%=ans["Poster"]%>>
+      <a href="/result/add"><button type="button" class="btn btn-danger navbar-btn" >Add+</button></a>
+    </li>
+  </div> 
+  
+   <hr>
+    
+  <% }) %>
+
+  <a href="/"><button type="button" class="btn btn-default navbar-btn" >Search Again!</button></a>
+</div>
+  
+<% include partials/footer %>

@@ -1,0 +1,24 @@
+<% include partials/header %>
+<div class="container">
+  <header class="jumbotron">
+    <strong><h3>
+      Welcome to world of movies!
+    </h3></strong>
+  </header>
+<!-- <form method="GET" action="/result">
+<input type="text" placeholder="search your movie" name="name">
+<input type="submit">
+
+</form> -->
+  <form class="navbar-form navbar-left" role="search" method="GET" action="/result">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="search your movie" name="name">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+<div>
+  <a href="/added">added as favourite!</a>
+</div>
+
+<% include partials/footer %>

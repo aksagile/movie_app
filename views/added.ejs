@@ -1,0 +1,17 @@
+<% include partials/header %>
+<div class="row text-center" style="display: flex; flex-wrap: wrap;">
+		<% movies.forEach(function(movie){ %>
+			<div class="col-md-3 col-sm-6">
+				<div class="thumbnail">
+					<img src="<%=movie.image%>" alt="<%=movie.name%>">
+					<div class="caption">
+						<%= movie.name %>
+            <%= movie.comments %>
+					</div>
+					
+				</div>
+			</div>
+		<% }); %>
+	</div>
+
+<% include partials/footer %>
